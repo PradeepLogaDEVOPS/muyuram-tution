@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Users, Wifi, BookOpen, CheckCircle } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader } from './ui/card';
+import { Users, Wifi, CheckCircle } from 'lucide-react';
 
 const CoursesSection = () => {
   const courses = [
@@ -63,65 +63,63 @@ const CoursesSection = () => {
   };
 
   return (
-    <section id="courses" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+    <section id="courses" className="py-20 md:py-28 bg-gradient-to-b from-[#faf9f7] to-[#fefdfb]">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0f172a] mb-6">
             Our Courses
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="w-24 h-1.5 bg-[#f59e0b] mx-auto mb-8"></div>
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
             Choose from our range of specialized courses designed to help you achieve academic excellence
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10 max-w-6xl mx-auto">
           {courses.map((course, index) => (
             <Card 
               key={index}
-              className="overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-100"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 bg-white rounded-3xl"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img 
                   src={course.image}
                   alt={course.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-2xl font-bold text-white mb-1">{course.title}</h3>
-                  <p className="text-blue-200 font-medium">{course.subtitle}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-6 right-6">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">{course.title}</h3>
+                  <p className="text-amber-300 font-semibold">{course.subtitle}</p>
                 </div>
               </div>
               
-              <CardHeader className="pb-4">
-                <CardDescription className="text-gray-700 leading-relaxed">
+              <CardHeader className="pb-4 pt-6">
+                <CardDescription className="text-gray-700 leading-relaxed text-base">
                   {course.description}
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-5">
                 {/* Key Benefits */}
                 <div className="grid grid-cols-2 gap-3">
                   {course.benefits.map((benefit, idx) => (
                     <div key={idx} className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-700">{benefit}</span>
+                      <span className="text-sm text-gray-700 leading-snug">{benefit}</span>
                     </div>
                   ))}
                 </div>
 
                 {/* Batch Info */}
-                <div className="flex items-center justify-between pt-4 border-t">
-                  <div className="flex items-center gap-6">
-                    <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-blue-600" />
-                      <span className="text-sm font-semibold text-gray-900">Only 10 Students</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Wifi className="w-4 h-4 text-green-600" />
-                      <span className="text-sm font-semibold text-gray-900">Online & Offline</span>
-                    </div>
+                <div className="flex items-center gap-6 pt-4 border-t border-gray-200">
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-[#f59e0b]" />
+                    <span className="text-sm font-bold text-[#0f172a]">Only 10 Students</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Wifi className="w-4 h-4 text-[#0f172a]" />
+                    <span className="text-sm font-bold text-[#0f172a]">Online & Offline</span>
                   </div>
                 </div>
 
@@ -129,7 +127,7 @@ const CoursesSection = () => {
                 <div className="flex gap-3 pt-2">
                   <Button 
                     onClick={scrollToDemo}
-                    className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white"
+                    className="flex-1 bg-[#0f172a] hover:bg-[#1e293b] text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300"
                   >
                     Book Demo
                   </Button>
@@ -139,7 +137,7 @@ const CoursesSection = () => {
                       if (element) element.scrollIntoView({ behavior: 'smooth' });
                     }}
                     variant="outline"
-                    className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50"
+                    className="flex-1 border-2 border-[#0f172a] text-[#0f172a] hover:bg-[#0f172a] hover:text-white rounded-full transition-all duration-300"
                   >
                     Enquire Now
                   </Button>

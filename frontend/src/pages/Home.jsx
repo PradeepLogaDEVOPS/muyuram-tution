@@ -14,7 +14,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#fefdfb]">
       <Header />
       <HeroSection />
       <AboutSection />

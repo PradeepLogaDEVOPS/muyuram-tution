@@ -36,40 +36,40 @@ Class: ${formData.class}`;
   };
 
   return (
-    <section id="demo" className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+    <section id="demo" className="py-20 md:py-28 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2.5 mb-6">
-              <GraduationCap className="w-5 h-5 text-yellow-300" />
-              <span className="text-white font-medium">Try Before You Join</span>
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8">
+              <GraduationCap className="w-5 h-5 text-amber-400" />
+              <span className="text-white font-semibold">Try Before You Join</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
               Book Your Free Demo Class
             </h2>
-            <p className="text-xl text-blue-100 mb-2">
+            <p className="text-xl md:text-2xl text-gray-200 mb-3">
               Experience our teaching methodology before enrolling
             </p>
-            <p className="text-lg text-yellow-300 font-bold">
-              ⚡ Only 10 Students Per Batch - Limited Seats Available!
+            <p className="text-lg text-amber-300 font-bold">
+              Only 10 Students Per Batch - Limited Seats Available!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-start">
             {/* Form */}
-            <Card className="shadow-2xl border-0">
-              <CardHeader>
-                <CardTitle className="text-2xl">Register for Free Demo</CardTitle>
+            <Card className="shadow-2xl border-0 rounded-3xl bg-white">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl md:text-3xl font-bold text-[#0f172a]">Register for Free Demo</CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <Label htmlFor="name" className="text-gray-700 font-medium mb-2 block">
+                    <Label htmlFor="name" className="text-[#0f172a] font-semibold mb-2 block text-base">
                       Student Name *
                     </Label>
                     <Input
@@ -78,13 +78,13 @@ Class: ${formData.class}`;
                       placeholder="Enter student name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="h-12"
+                      className="h-14 rounded-xl border-2 border-gray-200 focus:border-[#0f172a]"
                       required
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="phone" className="text-gray-700 font-medium mb-2 block">
+                    <Label htmlFor="phone" className="text-[#0f172a] font-semibold mb-2 block text-base">
                       Phone Number *
                     </Label>
                     <Input
@@ -93,13 +93,13 @@ Class: ${formData.class}`;
                       placeholder="Enter phone number"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="h-12"
+                      className="h-14 rounded-xl border-2 border-gray-200 focus:border-[#0f172a]"
                       required
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="class" className="text-gray-700 font-medium mb-2 block">
+                    <Label htmlFor="class" className="text-[#0f172a] font-semibold mb-2 block text-base">
                       Select Class *
                     </Label>
                     <Select 
@@ -107,7 +107,7 @@ Class: ${formData.class}`;
                       onValueChange={(value) => setFormData({ ...formData, class: value })}
                       required
                     >
-                      <SelectTrigger className="h-12">
+                      <SelectTrigger className="h-14 rounded-xl border-2 border-gray-200">
                         <SelectValue placeholder="Choose your class" />
                       </SelectTrigger>
                       <SelectContent>
@@ -122,7 +122,7 @@ Class: ${formData.class}`;
 
                   <Button 
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white h-12 text-lg font-semibold"
+                    className="w-full bg-[#0f172a] hover:bg-[#1e293b] text-white h-14 text-lg font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     Book Free Demo Now
                   </Button>
@@ -136,50 +136,50 @@ Class: ${formData.class}`;
 
             {/* Benefits */}
             <div className="space-y-6">
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-white mb-4">What You'll Experience:</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-0.5" />
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold text-white mb-6">What You'll Experience:</h3>
+                <div className="space-y-5">
+                  <div className="flex items-start gap-4">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-white font-semibold">Our Teaching Methodology</p>
-                      <p className="text-blue-100 text-sm">Understand how we make learning easy and effective</p>
+                      <p className="text-white font-semibold text-lg">Our Teaching Methodology</p>
+                      <p className="text-gray-300">Understand how we make learning easy and effective</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-white font-semibold">Personal Attention Approach</p>
-                      <p className="text-blue-100 text-sm">See how we focus on individual student needs</p>
+                      <p className="text-white font-semibold text-lg">Personal Attention Approach</p>
+                      <p className="text-gray-300">See how we focus on individual student needs</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-white font-semibold">Doubt Clearing Sessions</p>
-                      <p className="text-blue-100 text-sm">Experience instant clarification of concepts</p>
+                      <p className="text-white font-semibold text-lg">Doubt Clearing Sessions</p>
+                      <p className="text-gray-300">Experience instant clarification of concepts</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4">
+                    <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-white font-semibold">Interactive Learning</p>
-                      <p className="text-blue-100 text-sm">Engage in our student-friendly teaching style</p>
+                      <p className="text-white font-semibold text-lg">Interactive Learning</p>
+                      <p className="text-gray-300">Engage in our student-friendly teaching style</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-5 text-center">
-                  <Clock className="w-8 h-8 text-yellow-300 mx-auto mb-2" />
-                  <p className="text-white font-bold text-lg">100% Free</p>
-                  <p className="text-blue-100 text-sm">No charges</p>
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center">
+                  <Clock className="w-10 h-10 text-amber-400 mx-auto mb-3" />
+                  <p className="text-white font-bold text-xl">100% Free</p>
+                  <p className="text-gray-300 text-sm">No charges</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-5 text-center">
-                  <Award className="w-8 h-8 text-yellow-300 mx-auto mb-2" />
-                  <p className="text-white font-bold text-lg">No Obligation</p>
-                  <p className="text-blue-100 text-sm">Try risk-free</p>
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center">
+                  <Award className="w-10 h-10 text-amber-400 mx-auto mb-3" />
+                  <p className="text-white font-bold text-xl">No Obligation</p>
+                  <p className="text-gray-300 text-sm">Try risk-free</p>
                 </div>
               </div>
             </div>

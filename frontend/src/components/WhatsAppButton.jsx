@@ -27,17 +27,17 @@ const WhatsAppButton = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-8 right-8 z-50">
       {/* Tooltip */}
       {showTooltip && (
-        <div className="absolute bottom-full right-0 mb-3 bg-white shadow-2xl rounded-lg p-4 w-64 animate-bounce">
+        <div className="absolute bottom-full right-0 mb-4 bg-white shadow-2xl rounded-2xl p-5 w-72 animate-bounce border-2 border-gray-200">
           <button 
             onClick={() => setShowTooltip(false)}
-            className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+            className="absolute top-3 right-3 text-gray-400 hover:text-gray-600"
           >
             <X className="w-4 h-4" />
           </button>
-          <p className="text-sm font-semibold text-gray-900 mb-1">
+          <p className="text-sm font-bold text-[#0f172a] mb-1">
             👋 Need Help?
           </p>
           <p className="text-xs text-gray-600">
@@ -49,11 +49,11 @@ const WhatsAppButton = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleClick}
-        className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 flex items-center gap-2 group"
+        className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white rounded-full p-5 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 flex items-center gap-2 group"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="w-7 h-7" />
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap font-semibold">
+        <MessageCircle className="w-8 h-8" />
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap font-bold text-lg">
           Chat Now
         </span>
       </button>

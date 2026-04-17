@@ -10,35 +10,36 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-[#0f172a] text-white pt-16 md:pt-20 pb-8">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid md:grid-cols-4 gap-10 md:gap-12 mb-12">
           {/* About */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-2 rounded-lg">
-                <GraduationCap className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-3 mb-5">
+              <div className="bg-gradient-to-br from-amber-400 to-amber-500 p-3 rounded-2xl shadow-lg">
+                <GraduationCap className="w-7 h-7 text-[#0f172a]" strokeWidth={2.5} />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Excellence Academy</h3>
+                <h3 className="text-xl font-extrabold">Mayuram Tuition Centre</h3>
+                <p className="text-xs text-amber-400 font-bold">Premium Coaching</p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-4">
               Mayuram's most trusted coaching institute for 10th, 11th, 12th, JEE & NEET preparation.
             </p>
-            <p className="text-yellow-400 font-semibold text-sm">
+            <p className="text-amber-400 font-bold">
               Only 10 Students Per Batch
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-bold mb-5 text-amber-400">Quick Links</h4>
+            <ul className="space-y-3">
               <li>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
                 >
                   About Us
                 </button>
@@ -46,7 +47,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('courses')}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
                 >
                   Courses
                 </button>
@@ -54,7 +55,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('why-choose')}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
                 >
                   Why Choose Us
                 </button>
@@ -62,7 +63,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('demo')}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
                 >
                   Free Demo Class
                 </button>
@@ -70,7 +71,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
                 >
                   Contact Us
                 </button>
@@ -80,33 +81,33 @@ const Footer = () => {
 
           {/* Courses */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Our Courses</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="text-gray-400">10th Standard - All Subjects</li>
-              <li className="text-gray-400">11th Standard - PCM</li>
-              <li className="text-gray-400">12th Standard - PCM</li>
-              <li className="text-gray-400">JEE Preparation</li>
-              <li className="text-gray-400">NEET Preparation</li>
+            <h4 className="text-lg font-bold mb-5 text-amber-400">Our Courses</h4>
+            <ul className="space-y-3 text-gray-400 font-medium">
+              <li>10th Standard - All Subjects</li>
+              <li>11th Standard - PCM</li>
+              <li>12th Standard - PCM</li>
+              <li>JEE Preparation</li>
+              <li>NEET Preparation</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
-            <div className="space-y-3">
+            <h4 className="text-lg font-bold mb-5 text-amber-400">Contact Us</h4>
+            <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-blue-400 mt-1 flex-shrink-0" />
-                <p className="text-gray-400 text-sm">
+                <MapPin className="w-4 h-4 text-amber-400 mt-1 flex-shrink-0" />
+                <p className="text-gray-400 text-sm leading-relaxed">
                   [Your Address]<br />
                   Mayuram, Tamil Nadu
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <p className="text-gray-400 text-sm">+91 98765 43210</p>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-blue-400 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <p className="text-gray-400 text-sm">[email protected]</p>
               </div>
             </div>
@@ -117,27 +118,27 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2025 Excellence Academy. All rights reserved.
+              © 2025 Mayuram Tuition Centre. All rights reserved.
             </p>
             
             <div className="flex gap-4">
               <a 
                 href="#" 
-                className="bg-gray-800 p-2 rounded-lg hover:bg-blue-600 transition-colors"
+                className="bg-gray-800 p-3 rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="bg-gray-800 p-2 rounded-lg hover:bg-pink-600 transition-colors"
+                className="bg-gray-800 p-3 rounded-xl hover:bg-pink-600 transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="bg-gray-800 p-2 rounded-lg hover:bg-red-600 transition-colors"
+                className="bg-gray-800 p-3 rounded-xl hover:bg-red-600 transition-all duration-300 hover:scale-110"
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
