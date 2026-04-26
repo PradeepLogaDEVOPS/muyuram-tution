@@ -56,7 +56,7 @@ const FounderSection = () => {
                   {/* Profile Image */}
                   <div className="relative bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-3xl p-2">
                     <img 
-                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d"
+                      src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/492yx870_WhatsApp%20Image%202026-04-26%20at%201.08.36%20PM.jpeg"
                       alt="A. Rajaguruparan - Founder"
                       className="rounded-2xl w-full h-auto"
                     />

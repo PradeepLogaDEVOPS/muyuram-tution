@@ -102,7 +102,7 @@ const HeroSection = () => {
               {/* Image container */}
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 border-4 border-amber-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1629360021730-3d258452c425"
+                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/492yx870_WhatsApp%20Image%202026-04-26%20at%201.08.36%20PM.jpeg"
                   alt="Founder - Expert Physics Teacher"
                   className="rounded-2xl w-full h-auto"
                 />
