@@ -102,14 +102,37 @@ Message: ${formData.message || 'No message'}`;
                   </div>
 
                   <div className="flex items-start gap-4">
+                    <div className="bg-blue-600 p-4 rounded-2xl shadow-md">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[#0f172a] mb-2 text-lg">Email</h4>
+                      <a 
+                        href="mailto:mayuramtuitioncentre@gmail.com"
+                        className="text-gray-600 text-lg hover:text-blue-600 transition-colors"
+                      >
+                        mayuramtuitioncentre@gmail.com
+                      </a>
+                      <p className="text-sm text-gray-500 mt-1">Send us an email</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
                     <div className="bg-[#0f172a] p-4 rounded-2xl shadow-md">
                       <Clock className="w-6 h-6 text-amber-400" />
                     </div>
                     <div>
                       <h4 className="font-bold text-[#0f172a] mb-2 text-lg">Working Hours</h4>
-                      <p className="text-gray-600">Monday - Saturday</p>
-                      <p className="text-gray-600">9:00 AM - 7:00 PM</p>
-                      <p className="text-sm text-red-600 mt-1 font-semibold">Sunday Closed</p>
+                      <div className="space-y-2">
+                        <div>
+                          <p className="text-gray-800 font-semibold">Sunday & Saturday</p>
+                          <p className="text-gray-600">9:00 AM - 9:00 PM</p>
+                        </div>
+                        <div>
+                          <p className="text-gray-800 font-semibold">Monday to Friday</p>
+                          <p className="text-gray-600">6:00 PM - 9:00 PM (Evening)</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
