@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { BookOpen, Facebook, Instagram, Youtube, Mail, Phone, MapPin, Sparkles } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (id) => {
@@ -16,13 +16,28 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="bg-gradient-to-br from-amber-400 to-amber-500 p-3 rounded-2xl shadow-lg relative">
-                <BookOpen className="w-7 h-7 text-[#0f172a]" strokeWidth={2.5} />
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-amber-300 rounded-full"></div>
+              {/* Premium Logo for Footer */}
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl blur-md opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                
+                <div className="relative bg-gradient-to-br from-[#1e293b] to-[#0f172a] p-3.5 rounded-2xl shadow-xl border border-amber-500/20">
+                  <Sparkles className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-amber-400" />
+                  
+                  <div className="relative">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-6 h-6 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-full blur-sm"></div>
+                    </div>
+                    <BookOpen className="w-6 h-6 text-amber-400 relative z-10" strokeWidth={2.5} />
+                  </div>
+                  
+                  <div className="absolute bottom-0.5 left-0.5 w-1.5 h-1.5 bg-amber-500 rounded-full"></div>
+                  <div className="absolute top-0.5 right-0.5 w-1 h-1 bg-amber-400 rounded-full"></div>
+                </div>
               </div>
+              
               <div>
-                <h3 className="text-xl font-extrabold">Mayuram Tuition Centre</h3>
-                <p className="text-xs text-amber-400 font-bold">Premium Coaching</p>
+                <h3 className="text-xl font-extrabold leading-tight">Mayuram Tuition Centre</h3>
+                <p className="text-xs text-amber-400 font-bold leading-tight">Premium Coaching</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
