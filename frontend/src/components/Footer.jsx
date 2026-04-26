@@ -16,22 +16,16 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              {/* Premium Logo for Footer */}
+              {/* Custom Premium Logo for Footer */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl blur-md opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 
-                <div className="relative bg-gradient-to-br from-[#1e293b] to-[#0f172a] p-3.5 rounded-2xl shadow-xl border border-amber-500/20">
-                  <Sparkles className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 text-amber-400" />
-                  
-                  <div className="relative">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-6 h-6 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-full blur-sm"></div>
-                    </div>
-                    <BookOpen className="w-6 h-6 text-amber-400 relative z-10" strokeWidth={2.5} />
-                  </div>
-                  
-                  <div className="absolute bottom-0.5 left-0.5 w-1.5 h-1.5 bg-amber-500 rounded-full"></div>
-                  <div className="absolute top-0.5 right-0.5 w-1 h-1 bg-amber-400 rounded-full"></div>
+                <div className="relative bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-xl border border-white/10">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/7ltriqny_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_52_05%20PM.png"
+                    alt="Mayuram Tuition Centre Logo"
+                    className="w-12 h-12 object-contain"
+                  />
                 </div>
               </div>
               

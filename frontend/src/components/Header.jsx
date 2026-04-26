@@ -34,53 +34,16 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
           <div className="flex items-center gap-4">
+            {/* Custom Premium Peacock Logo */}
             <div className="relative group">
-              {/* Premium Logo Container with Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-2xl blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
               
-              {/* Main Logo Box */}
-              <div className="relative bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-4 rounded-2xl shadow-2xl border border-amber-500/20 group-hover:scale-105 transition-all duration-300">
-                {/* Peacock Feather Pattern - Top Right */}
-                <div className="absolute -top-1 -right-1">
-                  <Sparkles className="w-3 h-3 text-amber-400 animate-pulse" />
-                </div>
-                
-                {/* Peacock Feather Pattern - Bottom Left */}
-                <div className="absolute -bottom-1 -left-1">
-                  <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
-                </div>
-                
-                {/* Layered Icon Design - Peacock Feather + Book Concept */}
-                <div className="relative">
-                  {/* Background Decorative Element (Feather representation) */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-8 h-8 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-full blur-sm"></div>
-                  </div>
-                  
-                  {/* Main Book Icon with Gold Gradient */}
-                  <BookOpen className="w-7 h-7 relative z-10 transition-transform duration-300 group-hover:rotate-3" 
-                    style={{
-                      stroke: 'url(#goldGradient)',
-                      strokeWidth: 2.5,
-                      filter: 'drop-shadow(0 2px 4px rgba(245, 158, 11, 0.3))'
-                    }} 
-                  />
-                  
-                  {/* SVG Gradient Definition */}
-                  <svg width="0" height="0" style={{position: 'absolute'}}>
-                    <defs>
-                      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{stopColor: '#fbbf24', stopOpacity: 1}} />
-                        <stop offset="100%" style={{stopColor: '#f59e0b', stopOpacity: 1}} />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                
-                {/* Peacock Eye Pattern Dots */}
-                <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full"></div>
-                <div className="absolute bottom-1 left-1 w-1 h-1 bg-gradient-to-br from-amber-300 to-amber-500 rounded-full"></div>
-                <div className="absolute top-1/2 left-0 w-1 h-1 bg-amber-400/60 rounded-full"></div>
+              <div className="relative bg-white/95 p-2 rounded-2xl shadow-xl border border-gray-100 group-hover:scale-105 transition-all duration-300">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/7ltriqny_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_52_05%20PM.png"
+                  alt="Mayuram Tuition Centre Logo"
+                  className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                />
               </div>
             </div>
             
