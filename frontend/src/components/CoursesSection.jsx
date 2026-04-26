@@ -56,11 +56,13 @@ const CoursesSection = () => {
   ];
 
   const handleBookDemo = () => {
-    window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20book%20a%20demo%20class%20at%20Mayuram%20Tuition%20Centre', '_blank');
+    const message = "Hi, I want to book a free demo class for Mayuram Tuition Centre";
+    window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleEnquire = () => {
-    window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20enquire%20about%20Mayuram%20Tuition%20Centre%20classes', '_blank');
+    const message = "Hi, I am interested in your tuition classes. Please share details.";
+    window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (

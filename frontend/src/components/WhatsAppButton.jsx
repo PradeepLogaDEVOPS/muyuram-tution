@@ -21,7 +21,8 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20enquire%20about%20Mayuram%20Tuition%20Centre%20classes', '_blank');
+    const message = "Hi, I am interested in your tuition classes. Please share details.";
+    window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   if (!isVisible) return null;

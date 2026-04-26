@@ -23,17 +23,20 @@ const ContactSection = () => {
       return;
     }
 
-    // Direct WhatsApp redirect - NO API calls
-    const message = `Hi, I want to enquire about Mayuram Tuition Centre classes
+    // Format message for WhatsApp
+    const message = `Hi, I want to enquire about Mayuram Tuition Centre
+
 Name: ${formData.name}
 Phone: ${formData.phone}
 Email: ${formData.email || 'Not provided'}
-Message: ${formData.message || 'No message'}`;
+Message: ${formData.message || 'No specific message'}`;
     
+    // Direct WhatsApp redirect
     window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
     
     toast.success('Redirecting to WhatsApp...');
     
+    // Clear form
     setFormData({ name: '', phone: '', email: '', message: '' });
   };
 
@@ -92,9 +95,12 @@ Message: ${formData.message || 'No message'}`;
                       <h4 className="font-bold text-[#0f172a] mb-2 text-lg">WhatsApp</h4>
                       <p className="text-gray-600 text-lg">+91 877 869 0834</p>
                       <Button 
-                        onClick={() => window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20enquire%20about%20Mayuram%20Tuition%20Centre%20classes', '_blank')}
+                        onClick={() => {
+                          const message = "Hi, I am interested in your tuition classes. Please share details.";
+                          window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
+                        }}
                         variant="link" 
-                        className="text-green-600 p-0 h-auto mt-1 font-semibold"
+                        className="text-green-600 p-0 h-auto mt-1 font-semibold hover:text-green-700"
                       >
                         Chat Now →
                       </Button>
