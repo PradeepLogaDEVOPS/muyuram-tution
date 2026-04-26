@@ -4,14 +4,11 @@ import { MessageCircle, CheckCircle, Users, Wifi, Award } from 'lucide-react';
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919876543210?text=Hi, I want to know more about the courses', '_blank');
+    window.open('https://wa.me/918778690834?text=Hi, I want to enquire about Mayuram Tuition Academy classes', '_blank');
   };
 
-  const scrollToDemo = () => {
-    const element = document.getElementById('demo');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleBookDemo = () => {
+    window.open('https://wa.me/918778690834?text=Hi, I want to book a FREE Demo Class', '_blank');
   };
 
   return (
@@ -71,9 +68,9 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start items-center mb-10">
               <Button 
-                onClick={scrollToDemo}
+                onClick={handleBookDemo}
                 size="lg"
-                className="bg-[#0f172a] hover:bg-[#1e293b] text-white font-extrabold px-10 py-7 text-lg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-1"
+                className="bg-[#0f172a] hover:bg-[#1e293b] text-white font-extrabold px-10 py-7 text-lg rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-1 border-2 border-amber-500"
               >
                 Book Free Demo Class
               </Button>
@@ -89,7 +86,7 @@ const HeroSection = () => {
 
             {/* Trust Badge */}
             <p className="text-sm md:text-base text-gray-600 font-semibold">
-              ⭐ Trusted by parents for 18+ years | Limited seats available
+              ⭐ Trusted by parents for 18+ years | 🔥 Limited seats available - Book now!
             </p>
           </div>
 

@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 
 const WhatsAppSection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919876543210?text=Hi, I have a question about the courses', '_blank');
+    window.open('https://wa.me/918778690834?text=Hi, I want to enquire about Mayuram Tuition Academy classes', '_blank');
   };
 
   return (

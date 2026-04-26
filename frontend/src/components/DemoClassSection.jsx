@@ -27,7 +27,7 @@ Name: ${formData.name}
 Phone: ${formData.phone}
 Class: ${formData.class}`;
     
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918778690834?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     toast.success('Redirecting to WhatsApp...');

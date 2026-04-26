@@ -55,11 +55,12 @@ const CoursesSection = () => {
     }
   ];
 
-  const scrollToDemo = () => {
-    const element = document.getElementById('demo');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleBookDemo = () => {
+    window.open('https://wa.me/918778690834?text=Hi, I want to book a FREE Demo Class', '_blank');
+  };
+
+  const handleEnquire = () => {
+    window.open('https://wa.me/918778690834?text=Hi, I want to enquire about Mayuram Tuition Academy classes', '_blank');
   };
 
   return (
@@ -126,16 +127,13 @@ const CoursesSection = () => {
                 {/* CTA Buttons */}
                 <div className="flex gap-3 pt-2">
                   <Button 
-                    onClick={scrollToDemo}
-                    className="flex-1 bg-[#0f172a] hover:bg-[#1e293b] text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+                    onClick={handleBookDemo}
+                    className="flex-1 bg-[#0f172a] hover:bg-[#1e293b] text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 border-2 border-amber-500"
                   >
                     Book Demo
                   </Button>
                   <Button 
-                    onClick={() => {
-                      const element = document.getElementById('contact');
-                      if (element) element.scrollIntoView({ behavior: 'smooth' });
-                    }}
+                    onClick={handleEnquire}
                     variant="outline"
                     className="flex-1 border-2 border-[#0f172a] text-[#0f172a] hover:bg-[#0f172a] hover:text-white rounded-full transition-all duration-300"
                   >
