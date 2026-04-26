@@ -33,29 +33,27 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
-          <div className="flex items-center gap-4 md:gap-5">
-            {/* Premium Peacock + Book Logo - Icon Only */}
-            <div className="relative group">
+          <div className="flex items-center gap-3 md:gap-4">
+            {/* Premium Peacock + Book Logo - Prominent Size */}
+            <div className="relative group flex-shrink-0">
               {/* Subtle glow effect for premium feel */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-blue-900/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-blue-900/10 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              {/* Logo Container */}
-              <div className="relative">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/1xbu5h9c_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2002_06_42%20PM.png"
-                  alt="Mayuram Tuition Centre - Premium Education"
-                  className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain transition-all duration-300 group-hover:scale-105"
-                  style={{
-                    filter: 'drop-shadow(0 4px 12px rgba(15, 23, 42, 0.15))',
-                    mixBlendMode: 'normal'
-                  }}
-                />
-              </div>
+              {/* Logo - Clean, No Container */}
+              <img 
+                src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/1xbu5h9c_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2002_06_42%20PM.png"
+                alt="Mayuram Tuition Centre - Premium Education"
+                className="w-12 h-auto md:w-20 lg:w-24 object-contain transition-all duration-300 group-hover:scale-105"
+                style={{
+                  filter: 'drop-shadow(0 2px 8px rgba(15, 23, 42, 0.12))',
+                  maxHeight: '80px'
+                }}
+              />
             </div>
             
-            {/* Text Branding - Separate from Logo */}
+            {/* Text Branding - Properly Spaced */}
             <div className="flex flex-col justify-center">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
+              <h1 className="text-lg md:text-2xl lg:text-3xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
                 Mayuram Tuition Centre
               </h1>
               <p className="text-xs md:text-sm lg:text-base text-amber-600 font-bold tracking-wide leading-tight mt-0.5">
