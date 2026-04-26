@@ -23,14 +23,14 @@ const ContactSection = () => {
       return;
     }
 
-    const message = `New Enquiry from Website:
+    // Direct WhatsApp redirect - NO API calls
+    const message = `Hi, I want to enquire about Mayuram Tuition Centre classes
 Name: ${formData.name}
 Phone: ${formData.phone}
 Email: ${formData.email || 'Not provided'}
 Message: ${formData.message || 'No message'}`;
     
-    const whatsappUrl = `https://wa.me/918778690834?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
     
     toast.success('Redirecting to WhatsApp...');
     
@@ -79,7 +79,7 @@ Message: ${formData.message || 'No message'}`;
                     </div>
                     <div>
                       <h4 className="font-bold text-[#0f172a] mb-2 text-lg">Phone</h4>
-                      <p className="text-gray-600 text-lg">+91 87786 90834</p>
+                      <p className="text-gray-600 text-lg">+91 877 869 0834</p>
                       <p className="text-sm text-gray-500 mt-1">Call for enquiries</p>
                     </div>
                   </div>
@@ -90,9 +90,9 @@ Message: ${formData.message || 'No message'}`;
                     </div>
                     <div>
                       <h4 className="font-bold text-[#0f172a] mb-2 text-lg">WhatsApp</h4>
-                      <p className="text-gray-600 text-lg">+91 87786 90834</p>
+                      <p className="text-gray-600 text-lg">+91 877 869 0834</p>
                       <Button 
-                        onClick={() => window.open('https://wa.me/918778690834?text=Hi, I want to enquire about Mayuram Tuition Academy classes', '_blank')}
+                        onClick={() => window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20enquire%20about%20Mayuram%20Tuition%20Centre%20classes', '_blank')}
                         variant="link" 
                         className="text-green-600 p-0 h-auto mt-1 font-semibold"
                       >

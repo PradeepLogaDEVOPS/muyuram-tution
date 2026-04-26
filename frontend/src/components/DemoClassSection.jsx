@@ -22,13 +22,13 @@ const DemoClassSection = () => {
       return;
     }
 
-    const message = `Hi, I want to book a FREE Demo Class
+    // Direct WhatsApp redirect - NO API calls
+    const message = `Hi, I want to book a demo class at Mayuram Tuition Centre
 Name: ${formData.name}
 Phone: ${formData.phone}
 Class: ${formData.class}`;
     
-    const whatsappUrl = `https://wa.me/918778690834?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(`https://wa.me/918778690834?text=${encodeURIComponent(message)}`, '_blank');
     
     toast.success('Redirecting to WhatsApp...');
     

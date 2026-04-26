@@ -4,11 +4,11 @@ import { MessageCircle, CheckCircle, Users, Wifi, Award } from 'lucide-react';
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918778690834?text=Hi, I want to enquire about Mayuram Tuition Academy classes', '_blank');
+    window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20enquire%20about%20Mayuram%20Tuition%20Centre%20classes', '_blank');
   };
 
   const handleBookDemo = () => {
-    window.open('https://wa.me/918778690834?text=Hi, I want to book a FREE Demo Class', '_blank');
+    window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20book%20a%20demo%20class%20at%20Mayuram%20Tuition%20Centre', '_blank');
   };
 
   return (

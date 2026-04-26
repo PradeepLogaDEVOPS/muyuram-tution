@@ -83,8 +83,8 @@ const Header = () => {
               Contact
             </button>
             <Button 
-              onClick={() => scrollToSection('demo')}
-              className="bg-[#0f172a] hover:bg-[#1e293b] text-white px-7 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-semibold"
+              onClick={() => window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20book%20a%20demo%20class%20at%20Mayuram%20Tuition%20Centre', '_blank')}
+              className="bg-[#0f172a] hover:bg-[#1e293b] text-white px-7 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-semibold border-2 border-amber-500"
             >
               Book Free Demo
             </Button>
@@ -131,8 +131,8 @@ const Header = () => {
               Contact
             </button>
             <Button 
-              onClick={() => scrollToSection('demo')}
-              className="bg-[#0f172a] hover:bg-[#1e293b] text-white w-full rounded-full shadow-lg font-semibold"
+              onClick={() => window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20book%20a%20demo%20class%20at%20Mayuram%20Tuition%20Centre', '_blank')}
+              className="bg-[#0f172a] hover:bg-[#1e293b] text-white w-full rounded-full shadow-lg font-semibold border-2 border-amber-500"
             >
               Book Free Demo
             </Button>

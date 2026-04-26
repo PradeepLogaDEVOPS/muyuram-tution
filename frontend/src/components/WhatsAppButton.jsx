@@ -21,7 +21,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.open('https://wa.me/918778690834?text=Hi, I want to enquire about Mayuram Tuition Academy classes', '_blank');
+    window.open('https://wa.me/918778690834?text=Hi%2C%20I%20want%20to%20enquire%20about%20Mayuram%20Tuition%20Centre%20classes', '_blank');
   };
 
   if (!isVisible) return null;
