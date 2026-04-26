@@ -1,8 +1,10 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import FounderSection from '../components/FounderSection';
 import CoursesSection from '../components/CoursesSection';
 import WhyChooseUs from '../components/WhyChooseUs';
+import ClassTimingsSection from '../components/ClassTimingsSection';
 import DemoClassSection from '../components/DemoClassSection';
 import ResultsSection from '../components/ResultsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
@@ -17,9 +19,11 @@ const Home = () => {
     <div className="min-h-screen bg-[#fefdfb]">
       <Header />
       <HeroSection />
+      <FounderSection />
       <AboutSection />
       <CoursesSection />
       <WhyChooseUs />
+      <ClassTimingsSection />
       <DemoClassSection />
       <ResultsSection />
       <TestimonialsSection />

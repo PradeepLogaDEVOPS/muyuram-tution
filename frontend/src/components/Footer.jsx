@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { BookOpen, Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (id) => {
@@ -16,8 +16,9 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="bg-gradient-to-br from-amber-400 to-amber-500 p-3 rounded-2xl shadow-lg">
-                <GraduationCap className="w-7 h-7 text-[#0f172a]" strokeWidth={2.5} />
+              <div className="bg-gradient-to-br from-amber-400 to-amber-500 p-3 rounded-2xl shadow-lg relative">
+                <BookOpen className="w-7 h-7 text-[#0f172a]" strokeWidth={2.5} />
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-amber-300 rounded-full"></div>
               </div>
               <div>
                 <h3 className="text-xl font-extrabold">Mayuram Tuition Centre</h3>
@@ -27,9 +28,14 @@ const Footer = () => {
             <p className="text-gray-400 leading-relaxed mb-4">
               Mayuram's most trusted coaching institute for 10th, 11th, 12th, JEE & NEET preparation.
             </p>
-            <p className="text-amber-400 font-bold">
-              Only 10 Students Per Batch
-            </p>
+            <div className="space-y-2">
+              <p className="text-amber-400 font-bold">
+                Only 10 Students Per Batch
+              </p>
+              <p className="text-green-400 font-bold">
+                18+ Years of Excellence
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}

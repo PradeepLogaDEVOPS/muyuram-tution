@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X, BookOpen } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,10 +35,16 @@ const Header = () => {
           {/* Logo and Branding */}
           <div className="flex items-center gap-4">
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-3.5 rounded-2xl shadow-lg">
-                <GraduationCap className="w-7 h-7 text-amber-400" strokeWidth={2.5} />
+              {/* Premium Peacock + Book Logo Concept */}
+              <div className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-3.5 rounded-2xl shadow-lg relative overflow-hidden">
+                {/* Peacock feather accent - decorative curved element */}
+                <div className="absolute top-0 right-0 w-8 h-8 bg-gradient-to-br from-amber-400 to-amber-600 opacity-30 rounded-full blur-sm"></div>
+                {/* Open Book Icon */}
+                <BookOpen className="w-7 h-7 text-amber-400 relative z-10" strokeWidth={2.5} />
               </div>
+              {/* Gold accent dots - peacock eye pattern */}
               <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-amber-400 rounded-full"></div>
+              <div className="absolute -top-1 -left-1 w-2 h-2 bg-amber-500 rounded-full"></div>
             </div>
             <div>
               <h1 className="text-xl md:text-2xl font-extrabold text-[#0f172a] tracking-tight">
