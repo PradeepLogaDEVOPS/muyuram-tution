@@ -34,24 +34,28 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
           <div className="flex items-center gap-4">
-            {/* Custom Premium Peacock Logo */}
+            {/* Premium Peacock Logo Icon */}
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-2xl blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
               
-              <div className="relative bg-white/95 p-2 rounded-2xl shadow-xl border border-gray-100 group-hover:scale-105 transition-all duration-300">
+              <div className="relative bg-white p-2.5 rounded-2xl shadow-xl border-2 border-gray-100 group-hover:scale-105 transition-all duration-300">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/7ltriqny_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_52_05%20PM.png"
-                  alt="Mayuram Tuition Centre Logo"
-                  className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                  alt="Mayuram Tuition Centre - Peacock Logo"
+                  className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                  style={{
+                    filter: 'contrast(1.1) brightness(1.05)'
+                  }}
                 />
               </div>
             </div>
             
-            <div>
-              <h1 className="text-xl md:text-2xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
+            {/* Text Branding - Separate from Logo */}
+            <div className="flex flex-col">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
                 Mayuram Tuition Centre
               </h1>
-              <p className="text-xs md:text-sm text-amber-600 font-bold tracking-wide leading-tight">
+              <p className="text-xs md:text-sm text-amber-600 font-bold tracking-wide leading-tight mt-0.5">
                 Premium Coaching for Academic Excellence
               </p>
             </div>
