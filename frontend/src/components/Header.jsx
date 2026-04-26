@@ -33,29 +33,32 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo and Branding */}
-          <div className="flex items-center gap-4">
-            {/* Premium Peacock Logo Icon */}
+          <div className="flex items-center gap-4 md:gap-5">
+            {/* Premium Peacock + Book Logo - Icon Only */}
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-2xl blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
+              {/* Subtle glow effect for premium feel */}
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-blue-900/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <div className="relative bg-white p-2.5 rounded-2xl shadow-xl border-2 border-gray-100 group-hover:scale-105 transition-all duration-300">
+              {/* Logo Container */}
+              <div className="relative">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/7ltriqny_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_52_05%20PM.png"
-                  alt="Mayuram Tuition Centre - Peacock Logo"
-                  className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/1xbu5h9c_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2002_06_42%20PM.png"
+                  alt="Mayuram Tuition Centre - Premium Education"
+                  className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain transition-all duration-300 group-hover:scale-105"
                   style={{
-                    filter: 'contrast(1.1) brightness(1.05)'
+                    filter: 'drop-shadow(0 4px 12px rgba(15, 23, 42, 0.15))',
+                    mixBlendMode: 'normal'
                   }}
                 />
               </div>
             </div>
             
             {/* Text Branding - Separate from Logo */}
-            <div className="flex flex-col">
+            <div className="flex flex-col justify-center">
               <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-[#0f172a] tracking-tight leading-tight">
                 Mayuram Tuition Centre
               </h1>
-              <p className="text-xs md:text-sm text-amber-600 font-bold tracking-wide leading-tight mt-0.5">
+              <p className="text-xs md:text-sm lg:text-base text-amber-600 font-bold tracking-wide leading-tight mt-0.5">
                 Premium Coaching for Academic Excellence
               </p>
             </div>

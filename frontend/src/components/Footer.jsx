@@ -16,17 +16,18 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              {/* Custom Premium Logo for Footer */}
+              {/* Premium Peacock Logo for Footer */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-blue-900/10 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 
-                <div className="relative bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-xl border border-white/10">
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/7ltriqny_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2001_52_05%20PM.png"
-                    alt="Mayuram Tuition Centre Logo"
-                    className="w-12 h-12 object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/1xbu5h9c_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2002_06_42%20PM.png"
+                  alt="Mayuram Tuition Centre Logo"
+                  className="w-14 h-14 object-contain relative"
+                  style={{
+                    filter: 'drop-shadow(0 2px 8px rgba(245, 158, 11, 0.2))'
+                  }}
+                />
               </div>
               
               <div>
