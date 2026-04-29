@@ -5,26 +5,26 @@ const FounderSection = () => {
   const achievements = [
     {
       icon: GraduationCap,
-      title: 'Qualifications',
-      details: 'M.Sc, M.Ed, M.Phil',
+       title: 'Qualifications',
+    details: 'B.Tech IT',
       color: 'from-blue-600 to-blue-700'
     },
     {
       icon: BookOpen,
       title: 'Department',
-      details: 'Physics Specialist',
+      details: 'Academic Head & Founder',
       color: 'from-purple-600 to-purple-700'
     },
     {
       icon: TrendingUp,
       title: 'Experience',
-      details: 'P.G.T Physics for 18+ Years',
+      details: '18+ Years in Teaching & Academic Leadership',
       color: 'from-amber-600 to-amber-700'
     },
     {
       icon: Award,
       title: 'Achievement',
-      details: 'Excellent Results in State & CBSE Boards',
+      details: 'Consistent Top Results & Student Success',
       color: 'from-green-600 to-green-700'
     }
   ];
@@ -80,8 +80,7 @@ const FounderSection = () => {
                     B.Tech IT
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    P.G.T Physics with 18+ years of dedicated experience in producing 
-                    excellent results for both State Board and CBSE Board students.
+                    Founder & Academic Head with 18+ years of experience in building strong academic foundations and delivering excellent results.
                   </p>
                 </div>
 
