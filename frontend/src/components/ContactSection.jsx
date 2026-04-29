@@ -67,12 +67,11 @@ Message: ${formData.message || 'No specific message'}`;
                       <MapPin className="w-6 h-6 text-amber-400" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#0f172a] mb-2 text-lg">Address</h4>
                       <p className="text-gray-600 leading-relaxed">
-                        [Your Address Here]<br />
-                        Mayuram, Tamil Nadu<br />
-                        India
-                      </p>
+  27, Tiruveedhi Amman Koil St,<br />
+  SVP Nagar, Janakiraman Colony,<br />
+  Arumbakkam, Chennai - 600107
+</p>
                     </div>
                   </div>
 
@@ -144,15 +143,18 @@ Message: ${formData.message || 'No specific message'}`;
                 </CardContent>
               </Card>
 
-              {/* Google Maps Placeholder */}
-              <div className="bg-gray-100 rounded-3xl h-64 flex items-center justify-center border-2 border-gray-300 shadow-lg">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-3" />
-                  <p className="text-gray-600 font-bold text-lg">Google Maps Location</p>
-                  <p className="text-sm text-gray-500">[Add your Google Maps embed here]</p>
-                </div>
-              </div>
-            </div>
+{/* Google Maps */}
+<div className="rounded-3xl overflow-hidden shadow-lg border-2 border-gray-200">
+  <iframe
+    src="https://www.google.com/maps?q=27%20Tiruveedhi%20Amman%20Koil%20St%2C%20SVP%20Nagar%2C%20Janakiraman%20Colony%2C%20Arumbakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600107&output=embed"
+    width="100%"
+    height="350"
+    style={{ border: 0 }}
+    loading="lazy"
+    title="Mayuram Tuition Centre Location"
+  ></iframe>
+</div>
+</div>
 
             {/* Enquiry Form */}
             <Card className="border-2 border-gray-200 shadow-xl bg-white rounded-3xl">

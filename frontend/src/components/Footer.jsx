@@ -114,9 +114,10 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-amber-400 mt-1 flex-shrink-0" />
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  [Your Address]<br />
-                  Mayuram, Tamil Nadu
-                </p>
+  27, Tiruveedhi Amman Koil St,<br />
+  SVP Nagar, Janakiraman Colony,<br />
+  Arumbakkam, Chennai - 600107
+</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-amber-400 flex-shrink-0" />
@@ -133,7 +134,7 @@ const Footer = () => {
   href="mailto:mayuramtuition@gmail.com"
   className="text-gray-400 text-sm hover:text-white"
 >
-  mayuramtuition@gmail.com
+  mayuramtuitioncentre@gmail.com
 </a>
               </div>
             </div>

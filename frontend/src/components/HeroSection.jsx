@@ -37,12 +37,12 @@ const HeroSection = () => {
             {/* Trust Badge - 18+ Years */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-50 to-amber-100 border-2 border-amber-300 rounded-full px-6 py-3 mb-8 shadow-lg">
               <Award className="w-5 h-5 text-amber-600" />
-              <span className="text-[#0f172a] font-extrabold text-sm md:text-base">18+ Years of Excellence in Physics Coaching</span>
+              <span className="text-[#0f172a] font-extrabold text-sm md:text-base">Experienced Faculty | Small Batch Coaching</span>
             </div>
 
             {/* Main Headline - More Luxury Typography */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-[#0f172a] mb-6 md:mb-8 leading-tight tracking-tight">
-              Best Tuition Centre in Mayuram for{' '}
+              Best Tuition Centre in Arumbakkam for{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700">10th, 11th, 12th, JEE & NEET</span>
             </h1>
 
@@ -103,7 +103,7 @@ const HeroSection = () => {
                 <img 
                   src="/madam.jpg"
                   alt="Founder - Expert Physics Teacher"
-                  className="rounded-2xl w-full h-auto"
+                  className="rounded-2xl w-full h-auto object-cover object-top"
                 />
                 {/* Founder Quick Info Overlay */}
                 <div className="absolute bottom-12 left-8 right-8 bg-gradient-to-r from-[#0f172a]/95 to-[#1e293b]/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-amber-400/30">

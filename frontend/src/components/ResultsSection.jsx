@@ -83,11 +83,11 @@ const ResultsSection = () => {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <img 
-                src="https://images.unsplash.com/photo-1628887590815-2860da1c2900"
-                alt="Student success"
-                className="rounded-3xl shadow-2xl"
-              />
+   <img 
+  src="https://images.unsplash.com/photo-1513258496099-48168024aec0"
+  alt="Happy Indian students"
+  className="rounded-3xl shadow-2xl"
+/>
             </div>
           </div>
 
