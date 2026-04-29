@@ -23,7 +23,7 @@ const Footer = () => {
                 <img 
                   src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/1xbu5h9c_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2002_06_42%20PM.png"
                   alt="Mayuram Tuition Centre Logo"
-                  className="w-14 h-14 object-contain relative"
+                  className="w-16 md:w-20 lg:w-24 object-contain"
                   style={{
                     filter: 'drop-shadow(0 2px 8px rgba(245, 158, 11, 0.2))'
                   }}
@@ -120,11 +120,21 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <p className="text-gray-400 text-sm">+91 877 869 0834</p>
+                <a 
+  href="tel:+918778690834"
+  className="text-gray-400 text-sm hover:text-white"
+>
+  +91 87786 90834
+</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <p className="text-gray-400 text-sm">[email protected]</p>
+                <a 
+  href="mailto:mayuramtuition@gmail.com"
+  className="text-gray-400 text-sm hover:text-white"
+>
+  mayuramtuition@gmail.com
+</a>
               </div>
             </div>
           </div>

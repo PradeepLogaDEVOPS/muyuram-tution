@@ -63,25 +63,22 @@ const ResultsSection = () => {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-16">
             <div className="order-2 md:order-1">
               <h3 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-6">
-                Building Confidence, Achieving Excellence
+                Real Results. Real Student Success.
               </h3>
               <div className="space-y-5">
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  At Mayuram Tuition Centre, success isn't just about marks—it's about building 
-                  confidence, clarity, and a strong foundation for lifelong learning.
+                  At Mayuram Tuition Centre, our students consistently improve their marks through focused teaching, regular practice, and personal attention.
                 </p>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  Our students don't just improve their scores; they develop problem-solving 
-                  skills, critical thinking, and the confidence to tackle any academic challenge.
+                  We help students build confidence, clear concepts, and perform better in board exams, JEE, and NEET.
                 </p>
                 <div className="bg-amber-50 border-l-4 border-[#f59e0b] p-6 rounded-r-xl">
-                  <p className="text-[#0f172a] font-bold text-lg mb-2">
-                    Our Commitment
-                  </p>
-                  <p className="text-gray-700 leading-relaxed">
-                    Every student at Mayuram Tuition Centre receives personalized attention in our small batches of just 
-                    10 students, ensuring no one is left behind.
-                  </p>
+                 <p className="text-[#0f172a] font-bold text-lg mb-2">
+  Our Small Batch Advantage
+</p>
+<p className="text-gray-700 leading-relaxed">
+  Only 10 students per batch ensures every student gets individual attention, doubt clearing, and better results.
+</p>
                 </div>
               </div>
             </div>

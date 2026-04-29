@@ -56,15 +56,15 @@ const FounderSection = () => {
                   {/* Profile Image */}
                   <div className="relative bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-3xl p-2">
                     <img 
-                      src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/492yx870_WhatsApp%20Image%202026-04-26%20at%201.08.36%20PM.jpeg"
-                      alt="A. Rajaguruparan - Founder"
-                      className="rounded-2xl w-full h-auto"
+                       src="/madam.jpg"
+  alt="Founder"
+  className="w-full h-auto object-cover rounded-2xl"
                     />
                   </div>
                   
                   {/* Experience Badge */}
                   <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full shadow-xl">
-                    <p className="font-extrabold text-sm whitespace-nowrap">18+ Years Excellence</p>
+                    <p className="font-extrabold text-sm whitespace-nowrap">Expert Faculty | Proven Results</p>
                   </div>
                 </div>
               </div>
@@ -73,10 +73,11 @@ const FounderSection = () => {
               <div className="md:col-span-3 p-8 md:p-12 md:pl-0">
                 <div className="mb-8">
                   <h3 className="text-4xl md:text-5xl font-black text-[#0f172a] mb-3">
-                    A. Rajaguruparan
+                    
+                    Mrs. J. Dhivya
                   </h3>
                   <p className="text-xl text-amber-600 font-bold mb-4">
-                    M.Sc, M.Ed, M.Phil
+                    B.Tech IT
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     P.G.T Physics with 18+ years of dedicated experience in producing 
@@ -108,7 +109,7 @@ const FounderSection = () => {
                     "My mission is to make Physics accessible, understandable, and enjoyable 
                     for every student, ensuring they achieve excellence in their academics."
                   </p>
-                  <p className="text-gray-600 text-sm mt-2">— A. Rajaguruparan</p>
+                  <p className="text-gray-600 text-sm mt-2">— Mrs. J. Dhivya</p>
                 </div>
               </div>
             </div>

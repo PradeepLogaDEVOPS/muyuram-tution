@@ -42,15 +42,16 @@ const AboutSection = () => {
 
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-16 md:mb-20">
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1629360021730-3d258452c425"
-                alt="Personal tutoring"
-                className="rounded-3xl shadow-2xl"
-              />
+             <img 
+  
+  src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+  alt="Indian teacher with students"
+  className="w-full h-[520px] object-cover rounded-3xl shadow-2xl"
+/>
             </div>
             <div className="space-y-6">
               <h3 className="text-3xl md:text-4xl font-bold text-[#0f172a]">
-                Why We're Different
+               Personal Attention. Better Marks. Strong Foundation.
               </h3>
               <p className="text-gray-700 leading-relaxed text-lg">
                 Unlike traditional coaching centers with crowded classrooms, we maintain a strict 
@@ -64,8 +65,7 @@ const AboutSection = () => {
               </p>
               <div className="bg-amber-50 border-l-4 border-[#f59e0b] p-6 rounded-r-xl">
                 <p className="text-[#0f172a] font-semibold text-lg italic">
-                  "Our goal is not just to improve marks, but to build confidence and 
-                  create lifelong learners."
+                 "Our small-batch promise: only 10 students per batch, with doubt-clearing, regular practice, and personal guidance."
                 </p>
               </div>
             </div>

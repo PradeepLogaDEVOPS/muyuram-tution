@@ -43,10 +43,10 @@ const Header = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/1xbu5h9c_ChatGPT%20Image%20Apr%2026%2C%202026%2C%2002_06_42%20PM.png"
                 alt="Mayuram Tuition Centre - Premium Education"
-                className="w-12 h-auto md:w-20 lg:w-24 object-contain transition-all duration-300 group-hover:scale-105"
+               className="w-20 h-auto md:w-32 lg:w-36 object-contain transition-all duration-300 group-hover:scale-105"
                 style={{
                   filter: 'drop-shadow(0 2px 8px rgba(15, 23, 42, 0.12))',
-                  maxHeight: '80px'
+                  maxHeight: '120px'
                 }}
               />
             </div>

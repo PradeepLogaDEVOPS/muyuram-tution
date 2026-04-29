@@ -101,15 +101,15 @@ const HeroSection = () => {
               {/* Image container */}
               <div className="relative bg-white rounded-3xl shadow-2xl p-8 border-4 border-amber-100">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_premium-tuition-pro/artifacts/492yx870_WhatsApp%20Image%202026-04-26%20at%201.08.36%20PM.jpeg"
+                  src="/madam.jpg"
                   alt="Founder - Expert Physics Teacher"
                   className="rounded-2xl w-full h-auto"
                 />
                 {/* Founder Quick Info Overlay */}
                 <div className="absolute bottom-12 left-8 right-8 bg-gradient-to-r from-[#0f172a]/95 to-[#1e293b]/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl border border-amber-400/30">
                   <p className="text-amber-400 font-bold text-sm mb-1">Founder & Lead Faculty</p>
-                  <p className="text-white font-extrabold text-xl mb-1">A. Rajaguruparan</p>
-                  <p className="text-gray-300 text-sm">M.Sc, M.Ed, M.Phil | 18+ Years Experience</p>
+                  <p className="text-white font-extrabold text-xl mb-1">Mrs. J. Dhivya</p>
+                  <p className="text-gray-300 text-sm">B. Tech IT | Expert Faculty | Proven Results</p>
                 </div>
               </div>
             </div>
